@@ -18,7 +18,7 @@ topology:
 
     r3: 
       kind: linux
-      images: frrouting/frr:latest 
+      image: frrouting/frr:latest 
       binds: 
         - r3/daemons:/etc/frr/daemons
         - r3/frr.conf:/etc/frr/frr/conf
