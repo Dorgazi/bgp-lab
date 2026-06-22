@@ -21,7 +21,7 @@ topology:
       image: frrouting/frr:latest 
       binds: 
         - r3/daemons:/etc/frr/daemons
-        - r3/frr.conf:/etc/frr/frr/conf
+        - r3/frr.conf:/etc/frr/frr.conf
 
   links: 
     - endpoints: ["r1:eth1", "r2:eth1"] 
